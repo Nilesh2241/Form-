@@ -1,0 +1,102 @@
+<html>
+<head>
+	<style>
+	*{
+		box-sizing:border-box;
+		
+	}
+  body{
+	background: rgb(190, 239, 160);
+    
+  }
+	div{
+		float:left;
+		box-shadow: 10px 10px 10px rgb(164, 148, 197) ;
+		
+	}
+	h1{
+		text-shadow: 2px 2px 2px  #ddff02;
+	}
+	.r1{
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+		margin-top:10%;
+	    color:rgb(255, 255, 255) ;
+		background-color:darkblue;
+		
+		
+	}
+	.r2{
+		background-color:#cccccc;
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	.c1{
+		width:50%;
+		padding:2%;
+	}
+	.t1{
+		width:100%;
+		height:30px;
+		border-radius: 30px;
+		
+	}
+	.b1{
+		background-color: #1a0c0c;
+		color: #ccc;
+		height: 50px;
+		border: none;
+		padding: 4%;
+		border-radius: 30px;
+		box-shadow: 2px  2px  2px  2px rgb(81, 84, 255);
+	}
+	</style>
+</head>
+<body>
+	<div class="r1">
+		<center><h1>Enquiry Form</h1></center>
+	</div>
+	<div class="r2">
+		<div class="c1">
+			<label>First Name</label>
+			<input type="text" id="fname" class="t1" />
+		</div>
+		<div class="c1">
+			<label>Last Name</label>
+			<input type="text" id="lname" class="t1" />
+		</div>
+		<div class="c1">
+			<label>Email</label>
+			<input type="text"id="email" class="t1" />
+		</div>
+		<div class="c1">
+			<label>Mobile</label>
+			<input type="text" id="mob" class="t1" />
+		</div>
+		<div class="c1">
+			<label>Password</label>
+			<input type="password" id="psw" class="t1" />
+		</div>
+		<div class="c1">
+			<label>Cofirm Password</label>
+			<input type="text"id="cpsw" class="t1" />
+		</div>
+		
+		<div class="c1">
+			<button type="submit" onmouseover="fun1()" onmouseout="fun2()" id="btn" class="b1">Send Enquiry</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+			function fun1()
+			{
+				document.getElementById("btn").style.backgroundColor="green";
+			}
+			function fun2()
+			{
+				document.getElementById("btn").style.backgroundColor="red";
+			}
+	</script>
+</body>
+</html>
